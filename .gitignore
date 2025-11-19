@@ -38,3 +38,12 @@ yarn-error.log*
 *.log
 *.tmp
 *.temp
+
+# Uploads and user files
+uploads/
+backend/uploads/
+*.png
+*.jpg
+*.jpeg
+*.gif
+!src/assets/**
