@@ -1,1 +1,1 @@
-web: node diagnostic.js
+web: node src/server.js
