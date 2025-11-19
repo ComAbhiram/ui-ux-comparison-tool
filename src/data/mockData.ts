@@ -110,6 +110,7 @@ export const mockIssues: Issue[] = [
     screenshots: [],
     createdAt: '2024-11-01T10:30:00Z',
     updatedAt: '2024-11-01T10:30:00Z',
+    priority: 'High' as IssuePriority,
   },
   {
     id: '2',
@@ -123,8 +124,9 @@ export const mockIssues: Issue[] = [
     reportedBy: mockUsers[0],
     description: 'Add filter functionality for product categories and price ranges.',
     screenshots: [],
-    createdAt: '2024-11-02T14:15:00Z',
+    createdAt: '2024-11-04T09:15:00Z',
     updatedAt: '2024-11-04T09:20:00Z',
+    priority: 'Medium' as IssuePriority,
   },
   {
     id: '3',
@@ -138,8 +140,9 @@ export const mockIssues: Issue[] = [
     reportedBy: mockUsers[2],
     description: 'Profile picture not displaying correctly in high DPI screens.',
     screenshots: [],
-    createdAt: '2024-10-28T11:00:00Z',
+    createdAt: '2024-10-30T16:40:00Z',
     updatedAt: '2024-10-30T16:45:00Z',
+    priority: 'Low' as IssuePriority,
   },
   {
     id: '4',
@@ -153,8 +156,9 @@ export const mockIssues: Issue[] = [
     reportedBy: mockUsers[2],
     description: 'Cart items disappearing after page refresh. Critical issue affecting user experience.',
     screenshots: [],
-    createdAt: '2024-11-03T08:45:00Z',
+    createdAt: '2024-11-05T07:25:00Z',
     updatedAt: '2024-11-05T07:30:00Z',
+    priority: 'Critical' as IssuePriority,
   },
   {
     id: '5',
@@ -168,8 +172,9 @@ export const mockIssues: Issue[] = [
     reportedBy: mockUsers[4],
     description: 'Two-factor authentication not working for iOS devices.',
     screenshots: [],
-    createdAt: '2024-11-04T13:20:00Z',
+    createdAt: '2024-11-04T13:15:00Z',
     updatedAt: '2024-11-04T13:20:00Z',
+    priority: 'High' as IssuePriority,
   },
 ];
 

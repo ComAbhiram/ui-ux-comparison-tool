@@ -212,7 +212,7 @@ export default function NewIssueModal({ isOpen, onClose, onSubmit, users, projec
       
       // Call parent onSubmit for issue creation and state management
       if (onSubmit) {
-        await onSubmit(issueData);
+        await onSubmit(issueData as any);
       }
       
       console.log('Issue creation completed successfully');

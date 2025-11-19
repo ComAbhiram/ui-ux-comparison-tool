@@ -11,7 +11,7 @@
   status = 200
 
 [context.production.environment]
-  VITE_API_BASE_URL = "https://your-backend-url.railway.app/api"
+  VITE_API_BASE_URL = "https://ui-ux-comparison-backend.up.railway.app/api"
 
 [context.deploy-preview.environment]  
-  VITE_API_BASE_URL = "https://your-backend-url.railway.app/api"
+  VITE_API_BASE_URL = "https://ui-ux-comparison-backend.up.railway.app/api"
