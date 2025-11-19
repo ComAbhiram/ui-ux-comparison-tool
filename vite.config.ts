@@ -9,4 +9,20 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  preview: {
+    allowedHosts: [
+      'scales-south-congressional-millennium.trycloudflare.com',
+      '.trycloudflare.com',
+      '.loca.lt',
+      'localhost'
+    ]
+  },
+  server: {
+    allowedHosts: [
+      'scales-south-congressional-millennium.trycloudflare.com',
+      '.trycloudflare.com',
+      '.loca.lt',
+      'localhost'
+    ]
+  }
 })

@@ -24,15 +24,13 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:5174',
-    'http://localhost:5175',
-    'http://localhost:3000',
-    /\.ngrok\.io$/,           // Allow all ngrok.io URLs
-    /\.ngrok-free\.app$/,     // Allow new ngrok domain
-    /\.ngrok\.app$/           // Allow ngrok.app URLs
-  ],
+  origin: function(origin, callback) {
+    // Allow requests with no origin (like mobile apps, curl, Postman)
+    if (!origin) return callback(null, true);
+    
+    // Allow all origins for development
+    return callback(null, true);
+  },
   credentials: true
 }));
 app.use(express.json());
